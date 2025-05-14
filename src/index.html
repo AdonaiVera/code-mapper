@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMapper</title>
+    <link rel="icon" href="{{ url_for('static', path='images/favicon.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', path='images/favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', path='css/styles.css') }}">
+    <!-- Pixel art font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- PixiJS for pixel art rendering -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js"></script>
+    <!-- PixiJS Glow Filter plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/pixi-filters@5.2.1/dist/pixi-filters.min.js"></script>
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div class="crt-overlay"></div>
+    
+    <header>
+        <h1 class="pixel-title">CodeMapper</h1>
+        <a href="https://github.com/AdonaiVera/code-mapper" class="github-link" target="_blank" title="View on GitHub">
+            <img src="{{ url_for('static', path='images/github-pixel.png') }}" alt="GitHub" class="github-icon">
+        </a>
+    </header>
+
+    <main>
+
+
+        <div id="map-container">
+            <!-- Pixel art map will be rendered here using PixiJS -->
+        </div>
+
+        <div id="details-panel" class="hidden">
+            <div class="panel-header">
+                <h2 id="country-name">Country Name</h2>
+                <button id="close-panel" class="pixel-button">×</button>
+            </div>
+            <div id="dev-cards-container">
+                <!-- Developer cards will be dynamically inserted here -->
+            </div>
+        </div>
+        
+        <!-- Search bar moved to bottom -->
+        <div class="search-container">
+            <input type="text" id="search-input" class="pixel-input" placeholder="Search by country ...">
+            <button id="search-button" class="pixel-button">Search</button>
+        </div>
+    </main>
+
+    <footer class="pixel-footer">
+        <p>© 2025 CodeMapper | By: Ado</p>
+    </footer>
+
+    <script src="{{ url_for('static', path='js/main.js') }}"></script>
+</body>
+</html> 
