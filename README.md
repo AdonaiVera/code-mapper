@@ -4,6 +4,8 @@ A pixel-art style visualization of top GitHub contributors from around the world
 
 ## 📹 Demo
 
+https://github.com/user-attachments/assets/9d4f79f5-6ba0-43f3-bc88-20544b24fffd
+
 
 Check out the live demo: [CodeMapper on Vercel](https://code-mapper-cdkpgpjab-adonaiveras-projects.vercel.app/)
 
