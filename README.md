@@ -5,7 +5,7 @@ A pixel-art style visualization of top GitHub contributors from around the world
 ## 📹 Demo
 
 
-Check out the live demo: [CodeMapper on GitHub Pages](https://adonaivera.github.io/code-mapper/)
+Check out the live demo: [CodeMapper on Vercel](https://code-mapper-cdkpgpjab-adonaiveras-projects.vercel.app/)
 
 ## 🎮 Features
 
