@@ -4,6 +4,7 @@ A pixel-art style visualization of top GitHub contributors from around the world
 
 ## 📹 Demo
 
+
 Check out the live demo: [CodeMapper on GitHub Pages](https://adonaivera.github.io/code-mapper/)
 
 ## 🎮 Features
@@ -130,7 +131,7 @@ code-mapper/
 
 ## 🙏 Acknowledgments
 
-This project builds upon the [Top GitHub Users Action](https://github.com/gayanvoice/top-github-users-action) by Gayan Kuruppu for the GitHub data collection mechanism. While the original code handles the data fetching logic, this project implements a completely new pixel art visualization interface and user experience.
+This project builds upon the [Top GitHub Users Action](https://github.com/gayanvoice/top-github-users-action) by Gayan Kuruppu, Thank you for this amazing contribution.
 
 ## 📝 License
 
