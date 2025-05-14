@@ -63,14 +63,22 @@ docker build -t code-mapper .
 docker run -p 8000:8000 code-mapper
 ```
 
-## 🚢 Deployment
+### 🚢 Vercel Deployment
 
-This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment process includes:
+To deploy this project to Vercel with automatic cache updates:
 
-1. A daily workflow that updates the GitHub user data in the cache directory
-2. A deployment workflow that builds a static version of the site and publishes it to GitHub Pages
+1. Fork this repository
+2. Create a Vercel account and link your GitHub repository
+3. Add the following environment variables in Vercel:
+   - `VERCEL_TOKEN`: Your Vercel API token
+   - `VERCEL_PROJECT_ID`: Your Vercel project ID
 
-The live site is available at: [https://adonaivera.github.io/code-mapper/](https://adonaivera.github.io/code-mapper/)
+4. The workflow will:
+   - Deploy your application to Vercel
+   - Automatically update and invalidate the cache when new data is available
+   - Ensure the latest country data is always accessible
+
+The deployment process handles cache invalidation through the Vercel API, ensuring your users always see the most recent data without manual intervention.
 
 ### Manual Deployment
 
